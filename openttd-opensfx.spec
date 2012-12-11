@@ -39,3 +39,15 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc docs/*.txt
 %{_gamesdatadir}/openttd/data/%{realname}-%{version}.tar
+
+
+%changelog
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2.3-2mdv2011.0
++ Revision: 613542
+- rebuild
+
+* Tue Apr 13 2010 Jani Välimaa <wally@mandriva.org> 0.2.3-1mdv2010.1
++ Revision: 534624
+- import openttd-opensfx
+
+
