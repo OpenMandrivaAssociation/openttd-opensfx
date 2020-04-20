@@ -2,7 +2,7 @@
 
 Name:           openttd-%{realname}
 Version:        0.2.3
-Release:        4
+Release:        5
 Summary:        OpenSFX sound replacement set for OpenTTD
 
 Group:          Games/Strategy
@@ -11,7 +11,6 @@ URL:            http://dev.openttdcoop.org/projects/opensfx
 Source0:        http://bundles.openttdcoop.org/opensfx/releases/%{realname}-%{version}-source.tar.gz
 BuildArch:      noarch
 BuildRequires:  catcodec
-Conflicts:      openttd < 1.0.0-2mdv
 
 %description
 OpenSFX is an open source replacement for the original Transport Tycoon
@@ -21,15 +20,11 @@ Deluxe base sounds used by OpenTTD.
 %setup -q -n %{realname}-%{version}-source
 
 %build
-%make
+%make_build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_gamesdatadir}/openttd/data
-%make install INSTALL_DIR=%{buildroot}%{_gamesdatadir}/openttd/data
-
-%check
-%make check
+%make_install INSTALL_DIR=%{buildroot}%{_gamesdatadir}/openttd/data
 
 %files
 %defattr(-,root,root,-)
