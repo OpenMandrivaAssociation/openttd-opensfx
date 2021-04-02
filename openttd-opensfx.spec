@@ -1,14 +1,14 @@
 %define realname opensfx
 
 Name:           openttd-%{realname}
-Version:        0.2.3
-Release:        5
+Version:        1.0.1
+Release:        1
 Summary:        OpenSFX sound replacement set for OpenTTD
 
 Group:          Games/Strategy
-License:        Creative Commons Sampling Plus 1.0 License
+License:        CC BY-SA 3.0, GPLv2+, CDDL 1.1 
 URL:            http://dev.openttdcoop.org/projects/opensfx
-Source0:        http://bundles.openttdcoop.org/opensfx/releases/%{realname}-%{version}-source.tar.gz
+Source0:        https://cdn.openttd.org/opensfx-releases/%{version}/opensfx-%{version}-source.tar.xz
 BuildArch:      noarch
 BuildRequires:  catcodec
 
