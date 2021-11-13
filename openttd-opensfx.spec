@@ -1,7 +1,7 @@
 %define realname opensfx
 
 Name:           openttd-%{realname}
-Version:        1.0.2
+Version:        1.0.3
 Release:        1
 Summary:        OpenSFX sound replacement set for OpenTTD
 
