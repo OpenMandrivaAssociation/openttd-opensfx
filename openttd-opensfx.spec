@@ -2,7 +2,7 @@
 
 Name:           openttd-%{realname}
 Version:        1.0.3
-Release:        1
+Release:        2
 Summary:        OpenSFX sound replacement set for OpenTTD
 
 Group:          Games/Strategy
