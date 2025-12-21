@@ -10,6 +10,7 @@ License:        CC BY-SA 3.0, GPLv2+, CDDL 1.1
 URL:            https://dev.openttdcoop.org/projects/opensfx
 Source0:        https://cdn.openttd.org/opensfx-releases/%{version}/opensfx-%{version}-source.tar.xz
 BuildArch:      noarch
+BuildRequires:	make
 BuildRequires:  catcodec
 
 %description
